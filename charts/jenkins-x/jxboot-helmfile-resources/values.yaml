@@ -12,3 +12,5 @@ kaniko:
   # can use the local docker-registry chart
   flags: "--insecure"
 
+  
+

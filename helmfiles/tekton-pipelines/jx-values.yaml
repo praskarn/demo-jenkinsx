@@ -30,18 +30,23 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: minikube
+    registry: 10.105.200.208
   environments:
   - key: dev
+    owner: praskarn
+    repository: demo-jenkinsx
   - key: staging
   - key: production
   ingress:
-    domain: change.me
+    domain: 192.168.65.4.nip.io
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
     tls:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: praskarn
   repository: bucketrepo
   secretStorage: local
   vault: {}

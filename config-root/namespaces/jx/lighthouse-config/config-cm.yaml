@@ -8,6 +8,8 @@ data:
     in_repo_config:
       enabled:
         praskarn/demo-jenkinsx: true
+        praskarn/firstapp-jx: true
+        praskarn/newjxqs: true
     plank: {}
     pod_namespace: jx
     prowjob_namespace: jx
@@ -20,6 +22,8 @@ data:
         skip-unknown-contexts: false
       merge_method:
         praskarn/demo-jenkinsx: merge
+        praskarn/firstapp-jx: merge
+        praskarn/newjxqs: merge
       queries:
       - labels:
         - approved
@@ -31,6 +35,8 @@ data:
         - needs-rebase
         repos:
         - praskarn/demo-jenkinsx
+        - praskarn/firstapp-jx
+        - praskarn/newjxqs
       - labels:
         - updatebot
         missingLabels:
@@ -41,7 +47,9 @@ data:
         - needs-rebase
         repos:
         - praskarn/demo-jenkinsx
-      target_url: http://lighthouse-jx.192.168.65.4.nip.io/merge/status
+        - praskarn/firstapp-jx
+        - praskarn/newjxqs
+      target_url: http://lighthouse-jx.127.0.0.1.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null

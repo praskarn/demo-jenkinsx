@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: praskarn
+    provider: github
+    repository: firstapp-jx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: praskarn-firstapp-jx
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/praskarn/firstapp-jx.git
+  org: praskarn
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: firstapp-jx
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/praskarn/firstapp-jx

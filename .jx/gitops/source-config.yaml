@@ -9,6 +9,7 @@ spec:
     providerKind: github
     repositories:
     - name: firstapp-jx
+    - name: newjxqs
     scheduler: in-repo
   slack:
     channel: '#jenkins-x-pipelines'

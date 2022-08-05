@@ -3,7 +3,8 @@ enabled: true
 engines:
   tekton: true
 
-hmacToken: "{{ .Values.jx.secrets.hmacToken | default "123abc" }}"
+#hmacToken: "{{ .Values.jx.secrets.hmacToken | default "123abc" }}"
+hmacToken: ""
 
 git:
   kind: {{ .Values.jxRequirements.cluster.gitKind | default "github" }}

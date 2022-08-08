@@ -15,7 +15,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: docker-registry-jx.127.0.0.1.nip.io
+    - host: docker-registry-jx.192.168.65.4.nip.io
       http:
         paths:
           - path: /

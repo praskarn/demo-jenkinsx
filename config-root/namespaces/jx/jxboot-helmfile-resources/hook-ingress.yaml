@@ -11,7 +11,7 @@ metadata:
     gitops.jenkins-x.io/pipeline: 'namespaces'
 spec:
   rules:
-    - http:
+    - https: #praskarn changes
         paths:
           - pathType: ImplementationSpecific
             backend:

@@ -53,7 +53,7 @@ data:
         - praskarn/firstapp-jx
         - praskarn/newjxqs
         - praskarn/qsjx
-      target_url: http://lighthouse-jx.192.168.65.4.nip.io/merge/status
+      target_url: http://lighthouse-jx.127.0.0.1.nip.io/merge/status
 kind: ConfigMap
 metadata:
   creationTimestamp: null

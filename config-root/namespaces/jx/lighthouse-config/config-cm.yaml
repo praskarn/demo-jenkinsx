@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         praskarn/demo-jenkinsx: true
+        praskarn/qsjx: true
         praskarn/firstapp-jx: true
         praskarn/newjxqs: true
     plank: {}
@@ -22,6 +23,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         praskarn/demo-jenkinsx: merge
+        praskarn/qsjx: merge
         praskarn/firstapp-jx: merge
         praskarn/newjxqs: merge
       queries:
@@ -35,6 +37,7 @@ data:
         - needs-rebase
         repos:
         - praskarn/demo-jenkinsx
+        - praskarn/qsjx
         - praskarn/firstapp-jx
         - praskarn/newjxqs
       - labels:
@@ -47,6 +50,7 @@ data:
         - needs-rebase
         repos:
         - praskarn/demo-jenkinsx
+        - praskarn/qsjx
         - praskarn/firstapp-jx
         - praskarn/newjxqs
       target_url: http://lighthouse-jx.192.168.65.4.nip.io/merge/status

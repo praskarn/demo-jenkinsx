@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: praskarn
+    provider: github
+    repository: qsjx
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: praskarn-qsjx
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/praskarn/qsjx.git
+  org: praskarn
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: qsjx
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/praskarn/qsjx
